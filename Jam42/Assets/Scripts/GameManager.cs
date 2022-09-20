@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Cronomechronometer();
+        print("Hola");
     }
 
     public void StartGame(string _nextScene)
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+        else
+            Destroy(this);
 
     }
     public void Cronomechronometer()

@@ -5,6 +5,7 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
     public static MenuManager instance;
+    //public Transition transitionScript;
     public GameObject[] listMenus;
     [SerializeField]
     private int actualIDMenu = 0;
@@ -14,10 +15,6 @@ public class MenuManager : MonoBehaviour
         Singleton();
     }
 
-
-
-
-
     private void Singleton()
     {
         if (instance == null)
@@ -26,9 +23,11 @@ public class MenuManager : MonoBehaviour
 
     public void ChangeMenu(int _nextMenuID)
     {
+       // transitionScript.GoBlack();
         listMenus[actualIDMenu].SetActive(false);
         listMenus[_nextMenuID].SetActive(true);
         actualIDMenu = _nextMenuID;
+        //transitionScript.GoWhite();
     }
 
     public void QuitGame()
