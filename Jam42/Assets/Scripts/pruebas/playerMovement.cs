@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
+    public Animator anim;
     public Rigidbody2D playerRB;
     public float speed = 20;
     public float jump = 60f;
@@ -30,6 +31,7 @@ public class playerMovement : MonoBehaviour
         {
             move();
         }
+        Debug.DrawRay(transform.localPosition, Vector2.down * lenghtRaycast, Color.green);
     }
 
     private void move()
@@ -48,8 +50,7 @@ public class playerMovement : MonoBehaviour
 
     private bool isGrounded()
     {
-        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, Vector2.down, 1.0f, 1 << 8);
-        Debug.DrawRay(transform.position, Vector2.down, Color.green);
+        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, Vector2.down * lenghtRaycast, 1.0f, 1 << 8);
         if (hitinfo.collider != null)
         {
             Debug.Log("Hit: " + hitinfo.collider.name);
