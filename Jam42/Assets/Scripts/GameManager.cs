@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] private float timeToFinish = 0;
+    public float timeToFinish = 0;
+    public int coins = 0;
     [SerializeField] bool gameStarted = false;
 
     private void Awake()
