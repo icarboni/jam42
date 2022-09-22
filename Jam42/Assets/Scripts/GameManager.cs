@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public float timeToFinish = 0;
     public int coins = 0;
+    public float score = 0;
     public bool gameStarted = false;
 
     private void Awake()

@@ -15,7 +15,6 @@ public class playerMovement : MonoBehaviour
     public LayerMask groundMask;
     public bool stunned = false;
     public float jumpHeight = 10;
-    public bool resetJumpNeeded = false;
 
     // Start is called before the first frame update
     void Start()
