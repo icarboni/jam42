@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public float timeToFinish = 0;
     public int coins = 0;
-    [SerializeField] bool gameStarted = false;
+    public bool gameStarted = false;
 
     private void Awake()
     {
@@ -18,11 +18,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Cronomechronometer();
-        print("Hola");
     }
 
     public void StartGame(string _nextScene)
     {
+        gameStarted = true;
         SceneManager.LoadScene(_nextScene);
     }
 
@@ -33,13 +33,16 @@ public class GameManager : MonoBehaviour
         if (instance == null)
             instance = this;
         else
-            Destroy(this);
+            Destroy(this.gameObject);
 
     }
     public void Cronomechronometer()
     {
-        if(timeToFinish < 100 && gameStarted)
-         timeToFinish += Time.deltaTime;
+        if (timeToFinish < 100 && gameStarted)
+        {
+            timeToFinish += Time.deltaTime;
+        }else
+            gameStarted = false;
     }
 
 }
