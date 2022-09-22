@@ -371,6 +371,19 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 3.1, z: 0}
   m_ApplyAfter: 1
   m_PreserveComposition: 0
+--- !u!114 &296961845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296961838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3b51edf2f305745a6c5ba8ff87c849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_YPosition: -10.85
 --- !u!1 &470568498
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +872,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5919768429581402934, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
+      propertyPath: m_YDamping
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
