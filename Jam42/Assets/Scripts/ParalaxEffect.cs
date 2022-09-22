@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ParalaxEffect : MonoBehaviour
 {
+    public playerMovement playerMScript;
     public GameObject[] paralaxTransform;
     public Image[] paralaxImage;
     public float speed = 0;
@@ -16,7 +17,9 @@ public class ParalaxEffect : MonoBehaviour
     }
     public void parallax() 
     {
+        if(playerMScript.stunned == false)
         paralaxTransform[0].transform.position += Vector3.right * Time.deltaTime * speed * Input.GetAxis("Horizontal");
+        if(playerMScript.stunned == false)
         paralaxTransform[1].transform.position += Vector3.right * Time.deltaTime * speed * Input.GetAxis("Horizontal");
         if (paralaxTransform[0].transform.localPosition.x <= -1920f && Input.GetAxis("Horizontal") > 0)
             paralaxTransform[0].transform.localPosition = new Vector3(1920f, paralaxTransform[0].transform.localPosition.y, paralaxTransform[0].transform.localPosition.z);

@@ -31,6 +31,7 @@ public class playerMovement : MonoBehaviour
         {
             move();
         }
+        PlayerAnimations();
         Debug.DrawRay(transform.localPosition, Vector2.down * lenghtRaycast, Color.green);
     }
 
@@ -44,8 +45,6 @@ public class playerMovement : MonoBehaviour
             StartCoroutine(ResetJump());
         }
         playerRB.velocity += Vector2.right * speed * moveHorizontal * Time.deltaTime;
-
-
     }
 
     private bool isGrounded()
@@ -67,6 +66,12 @@ public class playerMovement : MonoBehaviour
         isJumping = true;
         yield return new WaitForSeconds(0.1f);
         isJumping = false;
+    }
+
+    public void PlayerAnimations()
+    {
+        anim.SetFloat("walkVelocity", playerRB.velocity.x);
+        anim.SetBool("IsStunned", stunned);
     }
     
 }
