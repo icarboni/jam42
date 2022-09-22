@@ -6,13 +6,19 @@ using TMPro;
 
 public class HudManager : MonoBehaviour
 {
+    public static HudManager instance;
     public float origin;
     public TextMeshProUGUI gameClock;
     public TextMeshProUGUI scoreTXT;
     public Transform playerTransform;
+    public GameObject successMenu;
+    public GameObject failureMenu;
+    public TextMeshProUGUI successText;
+    public TextMeshProUGUI failureText;
 
     void Start()
     {
+        Singleton();
         origin = playerTransform.position.x;
     }
 
@@ -20,6 +26,15 @@ public class HudManager : MonoBehaviour
     void Update()
     {
         ChangeClockNumber();
+    }
+
+    private void Singleton()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(this.gameObject);
+
     }
 
 
@@ -34,6 +49,23 @@ public class HudManager : MonoBehaviour
                 Debug.Log("Hit: " + GameManager.instance.score.ToString("F0"));
                 scoreTXT.text = "Score: " + GameManager.instance.score.ToString("F0");
             }
+        }
+    }
+
+
+    public void SuccessOrFailure()
+    {
+        if(GameManager.instance.totalScore >= 50)
+        {
+            playerTransform.GetComponent<playerMovement>().stunned = true;
+            successMenu.SetActive(true);
+            successText.text = GameManager.instance.totalScore.ToString("F0");
+        }
+        else
+        {
+            playerTransform.GetComponent<playerMovement>().stunned = true;
+            failureMenu.SetActive(true);
+            failureText.text = GameManager.instance.totalScore.ToString("F0");
         }
     }
 }

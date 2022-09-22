@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public float timeToFinish = 0;
     public int coins = 0;
     public float score = 0;
+    public float totalScore = 0;
     public bool gameStarted = false;
 
     private void Awake()
@@ -42,8 +43,13 @@ public class GameManager : MonoBehaviour
         if (timeToFinish < 100 && gameStarted)
         {
             timeToFinish += Time.deltaTime;
-        }else
+        }
+        else
+        { 
             gameStarted = false;
+            HudManager.instance.SuccessOrFailure();
+            totalScore = score + coins;
+        }
     }
 
 }
