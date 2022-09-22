@@ -40,7 +40,7 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded() == true)
         {
-            playerRB.velocity = new Vector2(playerRB.velocity.x, jumpHeight);
+            playerRB.velocity = new Vector2(playerRB.velocity.x * Time.deltaTime, jumpHeight);
             StartCoroutine(ResetJump());
         }
         playerRB.velocity += Vector2.right * speed * moveHorizontal * Time.deltaTime;
