@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182246876565971674, guid: b033dd9abd9fe874cac162ec7c6905c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.82
+      value: -7.7500005
       objectReference: {fileID: 0}
     - target: {fileID: 4182246876565971674, guid: b033dd9abd9fe874cac162ec7c6905c3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -815,7 +815,7 @@ GameObject:
   - component: {fileID: 693108336}
   - component: {fileID: 693108335}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: SuccessText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1475,7 +1475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.92
+      value: -10.85
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2331,8 +2331,9 @@ GameObject:
   - component: {fileID: 1545733591}
   - component: {fileID: 1545733590}
   - component: {fileID: 1545733589}
+  - component: {fileID: 1545733592}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SaveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2441,6 +2442,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545733587}
   m_CullTransparentMesh: 1
+--- !u!114 &1545733592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545733587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a989af5eb5ca4600870aa2ec5eee988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SaveButton: {fileID: 1545733589}
+  inputField: {fileID: 1585798592}
 --- !u!1001 &1573950596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2519,7 +2534,7 @@ GameObject:
   - component: {fileID: 1585798595}
   - component: {fileID: 1585798594}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: NameInput (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
