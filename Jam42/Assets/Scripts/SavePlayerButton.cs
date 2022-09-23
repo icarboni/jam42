@@ -9,21 +9,60 @@ using System;
 
 public class SavePlayerButton : MonoBehaviour
 {
-
+    string filePath;
     public Button SaveButton;
-    //public TextMeshProUGUI NameField;
-    public GameObject inputField; 
-    
+    public TextMeshProUGUI rankingScoreText;
+    public TextMeshProUGUI rankingNameText;
+    public GameObject inputField;
+    List<PlayerData> rankingData;
 
     // Start is called before the first frame update
     void Start()
     {
+        filePath = Application.persistentDataPath + "/ranking.json";
         Button btn = SaveButton.GetComponent<Button>();
-        
+        PlayerData youData = new PlayerData();
+        youData.name = "you";
+        youData.score = GameManager.instance.totalScore;
+        if (!File.Exists(filePath))
+        {
+            Debug.Log("NO EXIST");
+            rankingData = new List<PlayerData>();
+            rankingData.Add(youData);
+        }
+        else
+        {
+            string jsonLoaded = File.ReadAllText(filePath);
+
+            //Load as Array
+            rankingData = JsonHelper.FromJson<PlayerData>(jsonLoaded).ToList();
+            //Convert to List
+            //List<PlayerData> loadListData = rankingData.OfType<PlayerData>().ToList();
+            rankingData.Add(youData);
+            rankingData = rankingData.OrderByDescending(x => x.score).ToList();
+            //for (int i = 0; i < rankingData.Count; i++)
+            //{
+            //    Debug.Log(rankingData[i].name + " " + rankingData[i].score);
+            //}
+            showRanking(rankingData);
+        }
+
         btn.onClick.AddListener(SavePlayer);
     }
 
-    // Update is called once per frame
+   
+
+    void showRanking(List<PlayerData> rankingData)
+    {
+        for (int i = 0; i < rankingData.Count && i < 10; i++)
+        {
+            Debug.Log(rankingData[i].name + " " + rankingData[i].score);
+            rankingScoreText.text += rankingData[i].score + "\n";
+            rankingNameText.text += rankingData[i].name+ "\n";
+        }
+
+    }
+
     void SavePlayer()
     {
 
@@ -34,8 +73,6 @@ public class SavePlayerButton : MonoBehaviour
             playerData.name = name;
             playerData.score = GameManager.instance.totalScore;
 
-            string filePath = Application.persistentDataPath + "/ranking.json";
-            Debug.Log(filePath);
             if (!File.Exists(filePath))
             {
                 Debug.Log("NO EXIST");
@@ -46,17 +83,17 @@ public class SavePlayerButton : MonoBehaviour
             {
      
                 string jsonLoaded = File.ReadAllText(filePath);
-                Debug.Log(jsonLoaded);
-
+                //Debug.Log(jsonLoaded);
 
                 //Load as Array
                 PlayerData[] _tempLoadListData = JsonHelper.FromJson<PlayerData>(jsonLoaded);
                 //Convert to List
                 List<PlayerData> loadListData = _tempLoadListData.OfType<PlayerData>().ToList();
                 loadListData.Add(playerData);
+                loadListData = loadListData.OrderByDescending(x => x.score).ToList();
                 for (int i = 0; i < loadListData.Count; i++)
                 {
-                    Debug.Log("Got: " + loadListData[i].name);
+                    //.Log("Got: " + loadListData[i].name);
                 }
 
                 string parentData = JsonHelper.ToJson(loadListData.ToArray());
