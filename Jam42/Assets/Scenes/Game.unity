@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182246876565971674, guid: b033dd9abd9fe874cac162ec7c6905c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.7500005
+      value: -7.82
       objectReference: {fileID: 0}
     - target: {fileID: 4182246876565971674, guid: b033dd9abd9fe874cac162ec7c6905c3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1312,6 +1312,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4593602505194730716, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593602505194730717, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593602505194730719, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: m_Name
+      value: Enemie_Cerbero
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593602505194730719, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317823758801699040, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
       propertyPath: m_GravityScale
       value: 3
@@ -1475,7 +1491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.85
+      value: -10.92
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1549,87 +1565,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1003170360
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1744740207}
-    m_Modifications:
-    - target: {fileID: 4593602505051652080, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652080, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.964
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.099
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652082, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_Name
-      value: Enemie_Cervero
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593602505051652082, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
 --- !u!1 &1034942698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1592,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1034942698}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5c79c69657b56d149bb89c4f62d34d51, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1948,7 +1883,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278451968
+    rgba: 4278518015
   m_fontColor: {r: 1, g: 0, b: 0.019001007, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2957,7 +2892,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278451968
+    rgba: 4278518015
   m_fontColor: {r: 1, g: 0, b: 0.019001007, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
