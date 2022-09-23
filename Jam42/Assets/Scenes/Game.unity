@@ -1316,6 +1316,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4593602505194730716, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.219
+      objectReference: {fileID: 0}
     - target: {fileID: 4593602505194730717, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2583,6 +2587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaveButton: {fileID: 1545733589}
+  rankingScoreText: {fileID: 0}
+  rankingNameText: {fileID: 0}
   inputField: {fileID: 1585798592}
 --- !u!1001 &1573950596
 PrefabInstance:
