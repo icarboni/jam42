@@ -40,7 +40,7 @@ public class SavePlayerButton : MonoBehaviour
             {
                 Debug.Log("NO EXIST");
                 string parentData = JsonUtility.ToJson(playerData);
-                File.WriteAllText(filePath, parentData);
+                File.WriteAllText(filePath, "{\"Items\":[" + parentData + "]}");
             }
             else
             {
