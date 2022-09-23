@@ -45,9 +45,11 @@ public class GameManager : MonoBehaviour
             timeToFinish += Time.deltaTime;
         }
         else
-        { 
+        {
             gameStarted = false;
-            HudManager.instance.SuccessOrFailure();
+
+            if(HudManager.instance != null)
+                HudManager.instance.SuccessOrFailure();
             totalScore = score + coins;
         }
     }
