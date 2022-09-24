@@ -62,7 +62,6 @@ public class playerMovement : MonoBehaviour
         RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, Vector2.down * lenghtRaycast, 1.5f, 1 << 6);
         if (hitinfo.collider != null)
         {
-            Debug.Log("Hit: " + hitinfo.collider.name);
             if (isJumping == false)
             {
                 return true;

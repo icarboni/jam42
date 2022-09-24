@@ -41,31 +41,32 @@ public class HudManager : MonoBehaviour
     public void ChangeClockNumber()
     {
         gameClock.text = "Time: " + GameManager.instance.timeToFinish.ToString("F0");
+        
         if (GameManager.instance.gameStarted)
         {
             if (GameManager.instance.score < (playerTransform.position.x - origin))
             {
                 GameManager.instance.score = playerTransform.position.x - origin;
-                Debug.Log("Hit: " + GameManager.instance.score.ToString("F0"));
                 scoreTXT.text = "Score: " + GameManager.instance.score.ToString("F0");
             }
         }
     }
 
 
-    public void SuccessOrFailure()
+    public void SuccessOrFailure(float _totalScore)
     {
-        if(GameManager.instance.totalScore >= 50)
+        Debug.Log(_totalScore);
+        if(_totalScore >= 1)
         {
             playerTransform.GetComponent<playerMovement>().stunned = true;
             successMenu.SetActive(true);
-            successText.text = GameManager.instance.totalScore.ToString("F0");
+            successText.text = _totalScore.ToString("F0");
         }
         else
         {
             playerTransform.GetComponent<playerMovement>().stunned = true;
             failureMenu.SetActive(true);
-            failureText.text = GameManager.instance.totalScore.ToString("F0");
+            failureText.text = _totalScore.ToString("F0");
         }
     }
 }

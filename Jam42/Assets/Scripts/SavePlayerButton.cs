@@ -26,7 +26,6 @@ public class SavePlayerButton : MonoBehaviour
         youData.score = GameManager.instance.totalScore;
         if (!File.Exists(filePath))
         {
-            Debug.Log("NO EXIST");
             rankingData = new List<PlayerData>();
             rankingData.Add(youData);
         }
@@ -56,8 +55,7 @@ public class SavePlayerButton : MonoBehaviour
     {
         for (int i = 0; i < rankingData.Count && i < 10; i++)
         {
-            Debug.Log(rankingData[i].name + " " + rankingData[i].score);
-            rankingScoreText.text += rankingData[i].score + "\n";
+            rankingScoreText.text += rankingData[i].score.ToString("F0") + "\n";
             rankingNameText.text += rankingData[i].name+ "\n";
         }
 
@@ -75,7 +73,6 @@ public class SavePlayerButton : MonoBehaviour
 
             if (!File.Exists(filePath))
             {
-                Debug.Log("NO EXIST");
                 string parentData = JsonUtility.ToJson(playerData);
                 File.WriteAllText(filePath, "{\"Items\":[" + parentData + "]}");
             }

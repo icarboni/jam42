@@ -28,8 +28,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(_nextScene);
     }
 
-
-
     private void Singleton()
     {
         if (instance == null)
@@ -40,19 +38,21 @@ public class GameManager : MonoBehaviour
     }
     public void Cronomechronometer()
     {
-        if (timeToFinish < 100 && gameStarted)
-        {
-            timeToFinish += Time.deltaTime;
-        }
-        else
+        if (timeToFinish >= 10 && gameStarted)
         {
             gameStarted = false;
 
-            if(HudManager.instance != null)
-                HudManager.instance.SuccessOrFailure();
-            totalScore = score + coins;
+            if (HudManager.instance != null)
+            {
+                totalScore = score + coins;
+                HudManager.instance.SuccessOrFailure(totalScore);
+            }
+            
+        }
+        else if (timeToFinish < 10 && gameStarted)
+        {
+            timeToFinish += Time.deltaTime;
         }
     }
-
 }
 
