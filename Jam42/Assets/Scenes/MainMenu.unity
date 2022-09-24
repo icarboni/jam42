@@ -2052,6 +2052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1714736393}
+  - component: {fileID: 1714736396}
   - component: {fileID: 1714736395}
   - component: {fileID: 1714736394}
   m_Layer: 5
@@ -2101,15 +2102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to the piscine!
-
-
-    You have 100 seconds to get as far as you
-    can, meanwhile you will have to help your mates and try to avoid TIGs.
-
-
-    You
-    can move using with ASDW or with the arrows and jump with SPACE.'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa52486b7592a664e958c6927b1a9a47, type: 2}
   m_sharedMaterial: {fileID: -254813639580039603, guid: aa52486b7592a664e958c6927b1a9a47, type: 2}
@@ -2186,6 +2179,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714736392}
   m_CullTransparentMesh: 1
+--- !u!114 &1714736396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714736392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd203e36e4bca224fa66212cf3544d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToWrite: "Welcome to the piscine!\r\n\r\nYou have 100 seconds to get as far
+    as you can, \nmeanwhile you will have to help your mates and try to avoid TIGs.\r\n\r\nYou
+    can move using with ASDW or with the arrows and jump with SPACE."
+  text: {fileID: 1714736394}
+  typingSpeed: 0.03
+  actualTypingSpeed: 0.03
+  isWritting: 0
 --- !u!1 &1730770048
 GameObject:
   m_ObjectHideFlags: 0
