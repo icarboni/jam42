@@ -36,6 +36,7 @@ public class WorldGeneration : MonoBehaviour
             }
             else if (numRandom == 2)
             {
+                Instantiate(blocks[numRandom].platforms[0], firstPosition.position + new Vector3(17.75f * (i), -0.2f, 0), Quaternion.identity, firstPosition);
                 do
                     numRandom = Random.Range(0, 5);
                 while (numRandom != 1 && numRandom != 4);
