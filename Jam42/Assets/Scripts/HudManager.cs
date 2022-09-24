@@ -55,7 +55,6 @@ public class HudManager : MonoBehaviour
 
     public void SuccessOrFailure(float _totalScore)
     {
-        Debug.Log(_totalScore);
         if(_totalScore >= 1)
         {
             playerTransform.GetComponent<playerMovement>().stunned = true;

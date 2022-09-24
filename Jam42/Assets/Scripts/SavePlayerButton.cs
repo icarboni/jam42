@@ -11,8 +11,10 @@ public class SavePlayerButton : MonoBehaviour
 {
     string filePath;
     public Button SaveButton;
-    public TextMeshProUGUI rankingScoreText;
-    public TextMeshProUGUI rankingNameText;
+    public TextMeshProUGUI rankingScoreText1;
+    public TextMeshProUGUI rankingNameText1;
+    public TextMeshProUGUI rankingScoreText2;
+    public TextMeshProUGUI rankingNameText2;
     public GameObject inputField;
     List<PlayerData> rankingData;
 
@@ -55,8 +57,17 @@ public class SavePlayerButton : MonoBehaviour
     {
         for (int i = 0; i < rankingData.Count && i < 10; i++)
         {
-            rankingScoreText.text += rankingData[i].score.ToString("F0") + "\n";
-            rankingNameText.text += rankingData[i].name+ "\n";
+            if (i < 5)
+            {
+                rankingScoreText1.text += rankingData[i].score.ToString("F0") + "\n";
+                rankingNameText1.text += rankingData[i].name + "\n";
+            }
+            else
+            {
+                rankingScoreText2.text += rankingData[i].score.ToString("F0") + "\n";
+                rankingNameText2.text += rankingData[i].name+ "\n";
+
+            }
         }
 
     }
