@@ -17,15 +17,15 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
         Singleton();
     }
+    private void Start()
+    {
+        score = 0;
+        timeToFinish = 0;
+        coins = 0;
+    }
     private void Update()
     {
         Cronomechronometer();
-    }
-
-    public void StartGame(string _nextScene)
-    {
-        gameStarted = true;
-        SceneManager.LoadScene(_nextScene);
     }
 
     private void Singleton()

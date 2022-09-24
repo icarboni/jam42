@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -28,6 +29,17 @@ public class MenuManager : MonoBehaviour
         listMenus[_nextMenuID].SetActive(true);
         actualIDMenu = _nextMenuID;
         //transitionScript.GoWhite();
+    }
+
+    public void StartGame(string _nextScene)
+    {
+        GameManager.instance.gameStarted = true;
+        SceneManager.LoadScene(_nextScene);
+    }
+
+    public void ChangeScene(string _nextScene)
+    {
+        SceneManager.LoadScene(_nextScene);
     }
 
     public void QuitGame()
