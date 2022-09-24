@@ -68,4 +68,6 @@ public class HudManager : MonoBehaviour
             failureText.text = _totalScore.ToString("F0");
         }
     }
+
+
 }
