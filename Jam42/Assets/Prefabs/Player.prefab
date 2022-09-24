@@ -411,7 +411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593602505051652082, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
       propertyPath: m_Name
-      value: Enemie_Cervero
+      value: Enemie_Cerbero
       objectReference: {fileID: 0}
     - target: {fileID: 4593602505051652082, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
       propertyPath: m_IsActive
