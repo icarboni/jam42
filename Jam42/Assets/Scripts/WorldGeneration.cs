@@ -21,6 +21,7 @@ public class WorldGeneration : MonoBehaviour
             Debug.LogError(numRandom);
             if (numRandom == 0)
             {
+                Instantiate(blocks[numRandom].platforms[Random.Range(0, 5)], firstPosition.position + new Vector3(17.75f * (i), -1, 0), Quaternion.identity, firstPosition);
                 do
                     numRandom = Random.Range(0, 5);
                 while (numRandom != 0 && numRandom != 3);
@@ -36,7 +37,7 @@ public class WorldGeneration : MonoBehaviour
             }
             else if (numRandom == 2)
             {
-                Instantiate(blocks[numRandom].platforms[0], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
+                Instantiate(blocks[numRandom].platforms[Random.Range(0, 3)], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
                 do
                     numRandom = Random.Range(0, 5);
                 while (numRandom != 1 && numRandom != 4);
