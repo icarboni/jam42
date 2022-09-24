@@ -14,7 +14,6 @@ public class WorldGeneration : MonoBehaviour
 
     void Start()
     {
-
         do
             numRandom = Random.Range(0, 5);
         while (numRandom != 0 && numRandom != 4);
