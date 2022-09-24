@@ -14,9 +14,15 @@ public class WorldGeneration : MonoBehaviour
 
     void Start()
     {
-        numRandom = Random.Range(0, 5);
-        for (int i = 0; i < platformNumber; i++)
+
+
+        for (int i = 1; i < platformNumber; i++)
         {
+            do
+                numRandom = Random.Range(0, 5);
+            while (numRandom != 0 && numRandom != 4);
+            Instantiate(ground[numRandom], firstPosition.position + new Vector3(17.75f * (0), 0, 0), Quaternion.identity, parent.transform);
+
             Instantiate(ground[numRandom], firstPosition.position + new Vector3(17.75f * (i), 0, 0), Quaternion.identity, parent.transform);
             if (numRandom == 0)
             {
