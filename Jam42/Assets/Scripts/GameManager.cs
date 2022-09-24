@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     }
     public void Cronomechronometer()
     {
-        if (timeToFinish >= 10 && gameStarted)
+        if (timeToFinish >= 100 && gameStarted)
         {
             gameStarted = false;
 
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
             }
             
         }
-        else if (timeToFinish < 10 && gameStarted)
+        else if (timeToFinish < 100 && gameStarted)
         {
             timeToFinish += Time.deltaTime;
         }
