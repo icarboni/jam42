@@ -15,12 +15,12 @@ public class playerMovement : MonoBehaviour
     public LayerMask groundMask;
     public bool stunned = false;
     public float jumpHeight = 10;
+    public bool interactable = false;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRB = gameObject.GetComponent<Rigidbody2D>();
-
     }
 
     // Update is called once per frame
@@ -32,6 +32,17 @@ public class playerMovement : MonoBehaviour
         }
         PlayerAnimations();
         Debug.DrawRay(transform.localPosition, Vector2.down * lenghtRaycast, Color.green);
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Interactable"))
+            interactable = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Interactable"))
+            interactable = false;
     }
 
     private void move()
@@ -72,5 +83,7 @@ public class playerMovement : MonoBehaviour
         anim.SetFloat("walkVelocity", playerRB.velocity.x);
         anim.SetBool("IsStunned", stunned);
     }
+
+
     
 }

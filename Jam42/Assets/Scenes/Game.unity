@@ -2218,7 +2218,7 @@ MonoBehaviour:
   - {fileID: 4589407567564749412, guid: 6bd3de6ec5715424b94f69d24ff8e69b, type: 3}
   - {fileID: 671000168039916803, guid: cadfc1ec89477ec489648156724bf8e9, type: 3}
   - {fileID: 8465550460609884158, guid: e7ca75a3d274e4a499f99f0548269861, type: 3}
-  Platforms: []
+  blocks: []
   platformNumber: 50
   firstPosition: {fileID: 1731415215}
   numRandom: 0

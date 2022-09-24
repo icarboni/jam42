@@ -6,10 +6,9 @@ public class WorldGeneration : MonoBehaviour
 {
     public GameObject parent;
     public GameObject []ground;
-    public List<GameObject> Platforms;
+    public Platforms []blocks;
     public int platformNumber;
     public Transform firstPosition;
-    //public GameObject firstPlatform;
     public int numRandom;
     public int nextRandom;
 
@@ -18,10 +17,6 @@ public class WorldGeneration : MonoBehaviour
         numRandom = Random.Range(0, 5);
         for (int i = 0; i < platformNumber; i++)
         {
-            //GameObject temp;
-            /* temp = Instantiate(ground[numRandom] ,firstPosition.position + new Vector3(17.8f * (i), 0, 0), Quaternion.identity);
-             Platforms.Add(temp);
-             temp.transform.SetParent(parent.transform);*/
             Instantiate(ground[numRandom], firstPosition.position + new Vector3(17.75f * (i), 0, 0), Quaternion.identity, parent.transform);
             Debug.LogError(numRandom);
             if (numRandom == 0)
