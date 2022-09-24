@@ -22,29 +22,39 @@ public class WorldGeneration : MonoBehaviour
             temp = Instantiate(ground[numRandom] ,firstPosition.position + new Vector3(17.8f * (i), 0, 0), Quaternion.identity);
             Platforms.Add(temp);
             temp.transform.SetParent(parent.transform);
+            Debug.LogError(numRandom);
             if (numRandom == 0)
             {
-                while (numRandom != 0 && numRandom != 3)
+                do
                     numRandom = Random.Range(0, 5);
+                while (numRandom != 0 && numRandom != 3);
+                Debug.Log(numRandom);
             }
             else if (numRandom == 1)
             {
-                while (numRandom != 2 && numRandom != 4)
+                do
                     numRandom = Random.Range(0, 5);
+                while (numRandom != 2 && numRandom != 4);
+                Debug.Log(numRandom);
             }
             else if (numRandom == 2)
             {
-                while (numRandom != 1 && numRandom != 4)
+                do
                     numRandom = Random.Range(0, 5);
+                while (numRandom != 1 && numRandom != 4);
+                Debug.Log(numRandom);
             }
             else if (numRandom == 3)
             {
-                while (numRandom != 1 && numRandom != 2)
+                do
                     numRandom = Random.Range(0, 5);
+                while (numRandom != 1 && numRandom != 2);
+                Debug.Log(numRandom);
             }
-            else if (numRandom == 4)
+            else
             {
                 numRandom = 0;
+                Debug.Log(numRandom);
             }
 
 
