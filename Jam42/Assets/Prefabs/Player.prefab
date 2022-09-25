@@ -247,12 +247,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b61171fbcf6e7d04eac6d9d915f50cf8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03d36ec575d8fa0469f3145d20f2feeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8181818, y: 1.2727273}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1744740212}
   playerRB: {fileID: 8317823758801699040}
-  speed: 30
+  speed: 25
   jump: 6500
   isJumping: 0
   lenghtRaycast: 1.2
@@ -302,6 +302,7 @@ MonoBehaviour:
     m_Bits: 64
   stunned: 0
   jumpHeight: 24
+  interactable: 0
 --- !u!70 &1744740208
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -371,7 +372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.964
+      value: 1.219
       objectReference: {fileID: 0}
     - target: {fileID: 4593602505051652081, guid: 7e748fbb444f87c4ab292daa3a16bbc4, type: 3}
       propertyPath: m_LocalPosition.y
