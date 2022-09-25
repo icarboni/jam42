@@ -33,6 +33,9 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame(string _nextScene)
     {
+        GameManager.instance.score = 0;
+        GameManager.instance.totalScore = 0;
+        GameManager.instance.timeToFinish = 0;
         GameManager.instance.gameStarted = true;
         SceneManager.LoadScene(_nextScene);
     }
