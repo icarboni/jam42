@@ -56,7 +56,7 @@ public class HudManager : MonoBehaviour
 
     public void SuccessOrFailure(float _totalScore)
     {
-        if(_totalScore >= 250)
+        if(_totalScore >= 2)
         {
             playerTransform.GetComponent<playerMovement>().stunned = true;
             successMenu.SetActive(true);
@@ -72,6 +72,15 @@ public class HudManager : MonoBehaviour
 
     public void ChangeScene(string _nextScene)
     {
+        SceneManager.LoadScene(_nextScene);
+    }
+    public void RestartGame(string _nextScene)
+    {
+        origin = 0;
+        GameManager.instance.score = 0;
+        GameManager.instance.totalScore = 0;
+        GameManager.instance.timeToFinish = 0;
+        GameManager.instance.gameStarted = true;
         SceneManager.LoadScene(_nextScene);
     }
 }
