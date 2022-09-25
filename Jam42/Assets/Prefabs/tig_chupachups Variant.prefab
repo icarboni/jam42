@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 4472549057963484072, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}
+      propertyPath: ticSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
     - target: {fileID: 4472549057963484073, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}
       propertyPath: m_RootOrder
       value: 0

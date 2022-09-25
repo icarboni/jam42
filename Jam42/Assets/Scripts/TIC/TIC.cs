@@ -5,6 +5,12 @@ using UnityEngine;
 public class TIC : MonoBehaviour
 {
     public float time = 2;
+    public AudioSource audiomanager;
+    public AudioClip ticSound;
+    private void Start()
+    {
+        audiomanager = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +25,7 @@ public class TIC : MonoBehaviour
 
     IEnumerator Tic(Collider2D _other)
     {
+        audiomanager.PlayOneShot(ticSound, 1f);
         _other.GetComponent<playerMovement>().stunned = true;
         _other.GetComponent<Animator>().SetTrigger("Stunned");
         _other.transform.GetChild(1).GetComponent<Animator>().SetTrigger("CerbSpawn");

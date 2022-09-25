@@ -124,3 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e22ef6bfe4b2e44a3bc83fbbb08b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 2
+  audiomanager: {fileID: 0}
+  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
