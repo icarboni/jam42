@@ -17,6 +17,9 @@ public class playerMovement : MonoBehaviour
     public float jumpHeight = 10;
     public bool interactable = false;
 
+    public AudioSource audioManager;
+    public AudioClip[] sounds;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +56,7 @@ public class playerMovement : MonoBehaviour
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x * Time.deltaTime, jumpHeight);
             StartCoroutine(ResetJump());
+            audioManager.PlayOneShot(sounds[0], 1f);
         }
         playerRB.velocity += Vector2.right * speed * moveHorizontal * Time.deltaTime;
     }
