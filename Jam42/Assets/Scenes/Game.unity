@@ -1987,6 +1987,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8317823758801699044, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1037817320}
+    - target: {fileID: 8317823758801699044, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317823758801699044, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0130b980449c87e4fb71d951a35300a1, type: 3}
     - target: {fileID: 8317823758801699045, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
       propertyPath: m_RootOrder
       value: 4
