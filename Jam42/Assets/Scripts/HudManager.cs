@@ -41,7 +41,7 @@ public class HudManager : MonoBehaviour
 
     public void ChangeClockNumber()
     {
-        gameClock.text = "Time: " + GameManager.instance.timeToFinish.ToString("F0");
+        gameClock.text = GameManager.instance.timeToFinish.ToString("F0");
         
         if (GameManager.instance.gameStarted)
         {

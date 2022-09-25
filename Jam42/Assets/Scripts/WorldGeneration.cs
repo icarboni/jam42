@@ -20,9 +20,8 @@ public class WorldGeneration : MonoBehaviour
         lockersPoint = 0;
         lastIsLocker = false;
         shelterIn = false;
-        do
-            numRandom = Random.Range(0, 6);
-        while (numRandom != 0 && numRandom != 4);
+        numRandom = 4;
+
         for (int i = 0; i < platformNumber; i++)
         {
             Instantiate(ground[numRandom], firstPosition.position + new Vector3(17.75f * (i), 0, 0), Quaternion.identity, parent.transform);
@@ -32,7 +31,7 @@ public class WorldGeneration : MonoBehaviour
                 if (i != 0)
                     Instantiate(blocks[numRandom].platforms[Random.Range(0, 5)], firstPosition.position + new Vector3(17.75f * (i), -1, 0), Quaternion.identity, firstPosition);
                 do
-                    numRandom = Random.Range(0, 6);
+                    numRandom = Random.Range(0, 7);
                 while (numRandom != 0 && numRandom != 3);
                 lastIsLocker = false;
             }
@@ -41,8 +40,8 @@ public class WorldGeneration : MonoBehaviour
 
                 Instantiate(blocks[numRandom].platforms[Random.Range(0,9)], firstPosition.position + new Vector3(17.75f * (i), 0.4f, 0), Quaternion.identity, firstPosition);
                 do
-                    numRandom = Random.Range(0, 6);
-                while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
+                    numRandom = Random.Range(0, 7);
+                while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
                 lastIsLocker = false;
             }
             else if (numRandom == 2)
@@ -51,24 +50,24 @@ public class WorldGeneration : MonoBehaviour
                 {
                     Instantiate(blocks[numRandom].platforms[Random.Range(0, 3)], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
                     do
-                        numRandom = Random.Range(1, 6);
-                    while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
+                        numRandom = Random.Range(1, 7);
+                    while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
 
                 }
                 else if (shelterIn == false)
                 {
                     Instantiate(blocks[numRandom].platforms[Random.Range(3, 6)], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
                     do
-                        numRandom = Random.Range(1, 6);
-                    while (numRandom != 1 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
+                        numRandom = Random.Range(1, 7);
+                    while (numRandom != 1 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
                 }
                 lastIsLocker = false;
             }
             else if (numRandom == 3)
             {
                 do
-                    numRandom = Random.Range(0, 6);
-                while (numRandom != 1 && numRandom != 2 && !(numRandom == 5 && lastIsLocker == false));
+                    numRandom = Random.Range(0, 7);
+                while (numRandom != 1 && numRandom != 2 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
                 lastIsLocker = false;
             }
             else if (numRandom == 4)
@@ -88,17 +87,17 @@ public class WorldGeneration : MonoBehaviour
                 else if (lockersPoint == 1)
                 {
                     do
-                        numRandom = Random.Range(0, 6);
+                        numRandom = Random.Range(0, 7);
                     //while (numRandom != 5);
-                    while (numRandom != 4 && numRandom != 5);
+                    while (numRandom != 4 && numRandom != 5 && numRandom != 6);
                     if (numRandom == 5)
                         lockersPoint = Random.Range(1, 3);
                 }
                 else if (lockersPoint == 2)
                 {
                     do
-                        numRandom = Random.Range(0, 6);
-                    while (numRandom != 1 && numRandom != 2 && numRandom != 4);
+                        numRandom = Random.Range(0, 7);
+                    while (numRandom != 1 && numRandom != 2 && numRandom != 4 && numRandom != 6);
 
                 }
                 if (numRandom != 5)
@@ -106,6 +105,13 @@ public class WorldGeneration : MonoBehaviour
                     lockersPoint = 0;
                     lastIsLocker = true;
                 }
+            }
+            else if (numRandom == 6)
+            {
+                do
+                    numRandom = Random.Range(0, 6);
+                while (numRandom != 1 && numRandom != 2 && numRandom != 3 && !(numRandom == 5 && lastIsLocker == false));
+                lastIsLocker = false;
             }
             if (shelterIn == false && numRandom == 2)
                 shelterIn = true;
