@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472549057963484074, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}
       propertyPath: m_Name
-      value: tig_chupachups
+      value: tig_chupachups Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}

@@ -51,7 +51,7 @@ public class WorldGeneration : MonoBehaviour
                     Instantiate(blocks[numRandom].platforms[Random.Range(0, 3)], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
                     do
                         numRandom = Random.Range(1, 7);
-                    while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
+                    while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
 
                 }
                 else if (shelterIn == false)
@@ -65,6 +65,8 @@ public class WorldGeneration : MonoBehaviour
             }
             else if (numRandom == 3)
             {
+                Instantiate(blocks[numRandom].platforms[Random.Range(0, 4)], firstPosition.position + new Vector3(17.75f * (i), -1, 0), Quaternion.identity, firstPosition);
+
                 do
                     numRandom = Random.Range(0, 7);
                 while (numRandom != 1 && numRandom != 2 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
@@ -72,6 +74,8 @@ public class WorldGeneration : MonoBehaviour
             }
             else if (numRandom == 4)
             {
+                if (i != 0)
+                    Instantiate(blocks[numRandom].platforms[Random.Range(0, 4)], firstPosition.position + new Vector3(17.75f * (i), -1, 0), Quaternion.identity, firstPosition);
                 numRandom = 0;
                 lastIsLocker = false;
             }
@@ -89,7 +93,7 @@ public class WorldGeneration : MonoBehaviour
                     do
                         numRandom = Random.Range(0, 7);
                     //while (numRandom != 5);
-                    while (numRandom != 4 && numRandom != 5 && numRandom != 6);
+                    while (numRandom != 4 && numRandom != 5);
                     if (numRandom == 5)
                         lockersPoint = Random.Range(1, 3);
                 }
@@ -110,7 +114,7 @@ public class WorldGeneration : MonoBehaviour
             {
                 do
                     numRandom = Random.Range(0, 6);
-                while (numRandom != 1 && numRandom != 2 && numRandom != 3 && !(numRandom == 5 && lastIsLocker == false));
+                while (numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
                 lastIsLocker = false;
             }
             if (shelterIn == false && numRandom == 2)
