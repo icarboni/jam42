@@ -21,15 +21,14 @@ public class SavePlayerButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SaveButton.gameObject.SetActive(true);
         filePath = Application.persistentDataPath + "/ranking.json";
         Button btn = SaveButton.GetComponent<Button>();
         PlayerData youData = new PlayerData();
         youData.name = "you";
         youData.score = GameManager.instance.totalScore;
-        Debug.Log(filePath);
         if (!File.Exists(filePath))
         {
-            Debug.Log("noexist");
             rankingData = new List<PlayerData>();
             rankingData.Add(youData);
             rankingScoreText1.text += youData.score.ToString("F0") + "\n";
@@ -118,6 +117,7 @@ public class SavePlayerButton : MonoBehaviour
             //PlayerData loadedPlayer = JsonUtility.FromJson<PlayerData>(json);
             //Debug.Log("name: " + loadedPlayer.name);
             //Debug.Log("score: " + loadedPlayer.score);
+            SaveButton.gameObject.SetActive(false);
         }
         else
             Debug.Log("empty");
