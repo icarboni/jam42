@@ -28,6 +28,7 @@ public class WorldGeneration : MonoBehaviour
             Instantiate(ground[numRandom], firstPosition.position + new Vector3(17.75f * (i), 0, 0), Quaternion.identity, parent.transform);
             if (numRandom == 0)
             {
+
                 if (i != 0)
                     Instantiate(blocks[numRandom].platforms[Random.Range(0, 5)], firstPosition.position + new Vector3(17.75f * (i), -1, 0), Quaternion.identity, firstPosition);
                 do
@@ -37,30 +38,37 @@ public class WorldGeneration : MonoBehaviour
             }
             else if (numRandom == 1)
             {
-                lastIsLocker = false;
+
                 Instantiate(blocks[numRandom].platforms[Random.Range(0,9)], firstPosition.position + new Vector3(17.75f * (i), 0.4f, 0), Quaternion.identity, firstPosition);
                 do
                     numRandom = Random.Range(0, 6);
-                while (numRandom != 1 && numRandom != 2 && numRandom != 4 && (numRandom != 5 && lastIsLocker == false));
+                while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
                 lastIsLocker = false;
             }
             else if (numRandom == 2)
             {
                 if (shelterIn == true)
+                {
                     Instantiate(blocks[numRandom].platforms[Random.Range(0, 3)], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
+                    do
+                        numRandom = Random.Range(1, 6);
+                    while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
 
+                }
                 else if (shelterIn == false)
-                    Instantiate(blocks[numRandom].platforms[3], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
-                do
-                    numRandom = Random.Range(1, 6);
-                while (numRandom != 1 && (numRandom != 2 && shelterIn == false) && numRandom != 4 && (numRandom != 5 && lastIsLocker == false));
+                {
+                    Instantiate(blocks[numRandom].platforms[Random.Range(3, 6)], firstPosition.position + new Vector3(17.75f * (i), -0.4f, 0), Quaternion.identity, firstPosition);
+                    do
+                        numRandom = Random.Range(1, 6);
+                    while (numRandom != 1 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
+                }
                 lastIsLocker = false;
             }
             else if (numRandom == 3)
             {
                 do
                     numRandom = Random.Range(0, 6);
-                while (numRandom != 1 && numRandom != 2 && (numRandom != 5 && lastIsLocker == false));
+                while (numRandom != 1 && numRandom != 2 && !(numRandom == 5 && lastIsLocker == false));
                 lastIsLocker = false;
             }
             else if (numRandom == 4)
