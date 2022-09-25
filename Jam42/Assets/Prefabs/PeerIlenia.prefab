@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 587569653270767796}
   - component: {fileID: 3334259043579352075}
   m_Layer: 0
-  m_Name: Peer
+  m_Name: PeerIlenia
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 587569653270767799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8914, y: -2.0086}
-  m_SizeDelta: {x: 1.0118, y: 1.2765}
+  m_AnchoredPosition: {x: 3.0743, y: -1.3789}
+  m_SizeDelta: {x: 1.3775, y: 2.5359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587569653270767797
 MonoBehaviour:
@@ -70,14 +70,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8181818, y: 1.2727273}
+    oldSize: {x: 1.8, y: 2.9}
     newSize: {x: 0.8181818, y: 1.2727273}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88, y: 1.27}
+  m_Size: {x: 1.39, y: 2.52}
   m_EdgeRadius: 0
 --- !u!212 &3334259043579352075
 SpriteRenderer:
@@ -120,7 +120,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 03d36ec575d8fa0469f3145d20f2feeb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 787524c5b30b54a78b0e415765aab00e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
