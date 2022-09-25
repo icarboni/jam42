@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8722643634915825848}
   m_Layer: 0
-  m_Name: ShelterRandom0
+  m_Name: ShelterInRandom0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099545719830464824, guid: 61d7cb0a763b847e694e44f0077c9723, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.41
+      value: -2.62
       objectReference: {fileID: 0}
     - target: {fileID: 7099545719830464824, guid: 61d7cb0a763b847e694e44f0077c9723, type: 3}
       propertyPath: m_LocalPosition.y
@@ -118,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7990696907041432572, guid: 8a4385a81bec645d6860265725485433, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.26
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: 7990696907041432572, guid: 8a4385a81bec645d6860265725485433, type: 3}
       propertyPath: m_LocalPosition.y
@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 45747465008993527, guid: 047437a66875b47be9d3158101b141ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.48
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: 45747465008993527, guid: 047437a66875b47be9d3158101b141ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -262,7 +262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3675034380329456400, guid: 485e1ea00a31d4866bb01290dc571ab4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.44
+      value: 4.75
       objectReference: {fileID: 0}
     - target: {fileID: 3675034380329456400, guid: 485e1ea00a31d4866bb01290dc571ab4, type: 3}
       propertyPath: m_LocalPosition.y

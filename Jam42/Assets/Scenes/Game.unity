@@ -191,7 +191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182246876565971674, guid: b033dd9abd9fe874cac162ec7c6905c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.82
+      value: -7.7500005
       objectReference: {fileID: 0}
     - target: {fileID: 4182246876565971674, guid: b033dd9abd9fe874cac162ec7c6905c3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1830,7 +1830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.92
+      value: -10.85
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2449,6 +2449,7 @@ MonoBehaviour:
     - {fileID: 2257548405356260667, guid: 561f6669dd9e442eaa9f46ced0ac3330, type: 3}
     - {fileID: 2257548405356260667, guid: 808529e7175044c4db5673b8bd70b1b2, type: 3}
     - {fileID: 2257548405356260667, guid: 54f6715d447084cf2b320abee4d01797, type: 3}
+    - {fileID: 2257548405356260667, guid: 67210ba32520a400da7bbec0d96a014e, type: 3}
   - platforms: []
   - platforms: []
   - platforms:
@@ -2460,6 +2461,8 @@ MonoBehaviour:
   numRandom: 0
   nextRandom: 0
   lockersPoint: 0
+  lastIsLocker: 0
+  shelterIn: 0
 --- !u!4 &1253912596
 Transform:
   m_ObjectHideFlags: 0

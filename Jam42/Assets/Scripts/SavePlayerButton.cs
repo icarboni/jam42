@@ -26,10 +26,14 @@ public class SavePlayerButton : MonoBehaviour
         PlayerData youData = new PlayerData();
         youData.name = "you";
         youData.score = GameManager.instance.totalScore;
+        Debug.Log(filePath);
         if (!File.Exists(filePath))
         {
+            Debug.Log("noexist");
             rankingData = new List<PlayerData>();
             rankingData.Add(youData);
+            rankingScoreText1.text += youData.score.ToString("F0") + "\n";
+            rankingNameText1.text += "you\n";
         }
         else
         {
@@ -86,6 +90,7 @@ public class SavePlayerButton : MonoBehaviour
             {
                 string parentData = JsonUtility.ToJson(playerData);
                 File.WriteAllText(filePath, "{\"Items\":[" + parentData + "]}");
+                
             }
             else
             {
@@ -99,10 +104,6 @@ public class SavePlayerButton : MonoBehaviour
                 List<PlayerData> loadListData = _tempLoadListData.OfType<PlayerData>().ToList();
                 loadListData.Add(playerData);
                 loadListData = loadListData.OrderByDescending(x => x.score).ToList();
-                for (int i = 0; i < loadListData.Count; i++)
-                {
-                    //.Log("Got: " + loadListData[i].name);
-                }
 
                 string parentData = JsonHelper.ToJson(loadListData.ToArray());
                 File.WriteAllText(filePath, parentData);
