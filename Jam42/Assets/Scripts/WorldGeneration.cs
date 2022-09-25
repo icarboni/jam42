@@ -65,6 +65,8 @@ public class WorldGeneration : MonoBehaviour
             }
             else if (numRandom == 3)
             {
+                Instantiate(blocks[numRandom].platforms[Random.Range(0, 4)], firstPosition.position + new Vector3(17.75f * (i), -1, 0), Quaternion.identity, firstPosition);
+
                 do
                     numRandom = Random.Range(0, 7);
                 while (numRandom != 1 && numRandom != 2 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
@@ -72,6 +74,8 @@ public class WorldGeneration : MonoBehaviour
             }
             else if (numRandom == 4)
             {
+                if (i != 0)
+                    Instantiate(blocks[numRandom].platforms[Random.Range(0, 4)], firstPosition.position + new Vector3(17.75f * (i), -1, 0), Quaternion.identity, firstPosition);
                 numRandom = 0;
                 lastIsLocker = false;
             }
