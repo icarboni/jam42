@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 2131703498058615259}
   - component: {fileID: 7176957427898849616}
   - component: {fileID: 6703946713093922159}
-  - component: {fileID: 1570913397241172761}
   m_Layer: 0
-  m_Name: tig_shoes
+  m_Name: rubber_duck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 9192563336691153496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.53055555, y: -2.27, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: add68eb8929b34be78a887687e749845, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa8eae548a6e1cd4a8d98dbc529ec4ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.4, y: 1.1}
     newSize: {x: 0.19, y: 0.45}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -112,16 +111,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19, y: 0.45}
   m_EdgeRadius: 0
---- !u!114 &1570913397241172761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9192563336691153496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17e22ef6bfe4b2e44a3bc83fbbb08b98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 2
