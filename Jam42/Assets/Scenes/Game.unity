@@ -2427,6 +2427,7 @@ MonoBehaviour:
   - {fileID: 4589407567564749412, guid: 6bd3de6ec5715424b94f69d24ff8e69b, type: 3}
   - {fileID: 671000168039916803, guid: cadfc1ec89477ec489648156724bf8e9, type: 3}
   - {fileID: 8465550460609884158, guid: e7ca75a3d274e4a499f99f0548269861, type: 3}
+  - {fileID: 6926311586521307437, guid: 69ad16c0e1a604be199b7ea4005dc0de, type: 3}
   blocks:
   - platforms:
     - {fileID: 2257548405356260667, guid: 38b8aecd633af4b28a4b89879d8e7e9f, type: 3}
@@ -2450,10 +2451,15 @@ MonoBehaviour:
     - {fileID: 2257548405356260667, guid: 54f6715d447084cf2b320abee4d01797, type: 3}
   - platforms: []
   - platforms: []
+  - platforms:
+    - {fileID: 8598936423553770372, guid: d15f0cb3f75844bca86a64710a2a898d, type: 3}
+    - {fileID: 6708217964184335905, guid: c1605ce706074423c80f7e598905e16a, type: 3}
+    - {fileID: 1837245496505176658, guid: 96f7f4ccd0c5d4acbb2e0cd4635dfcbb, type: 3}
   platformNumber: 50
   firstPosition: {fileID: 1731415215}
   numRandom: 0
   nextRandom: 0
+  lockersPoint: 0
 --- !u!4 &1253912596
 Transform:
   m_ObjectHideFlags: 0
