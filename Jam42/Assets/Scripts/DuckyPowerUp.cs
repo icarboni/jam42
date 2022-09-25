@@ -6,14 +6,12 @@ public class DuckyPowerUp : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && (other.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled == false))
         {
-            if (other.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled == false) 
-            { 
+            
                 other.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = true;
-                Debug.Log("enable");
                 Destroy(this.gameObject);
-            }
+            
         }
         else 
         { 

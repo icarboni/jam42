@@ -288,7 +288,7 @@ Transform:
   - {fileID: 7584137410562921789}
   - {fileID: 152300870853144756}
   - {fileID: 5944080378966218138}
-  - {fileID: 368899553493901002}
+  - {fileID: 612986831612785840}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -673,65 +673,65 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4.2}
   m_EdgeRadius: 0
---- !u!1001 &1768732927462479633
+--- !u!1001 &1810991216066597499
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 6788529554657142973}
     m_Modifications:
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616776, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
+      propertyPath: m_Name
+      value: DuckPowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.28
+      value: -1.2855318
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.41
+      value: 2.3706515
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalPosition.z
       value: 9.940653
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
+    - target: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9192563336691153496, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
-      propertyPath: m_Name
-      value: rubber_duck
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
---- !u!4 &368899553493901002 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
+--- !u!4 &612986831612785840 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2131703498058615259, guid: ec03850e47b9f4202a6cafdd415a440d, type: 3}
-  m_PrefabInstance: {fileID: 1768732927462479633}
+  m_CorrespondingSourceObject: {fileID: 1270062017222616779, guid: 18b5bc005eda44747846090ec8f6a85c, type: 3}
+  m_PrefabInstance: {fileID: 1810991216066597499}
   m_PrefabAsset: {fileID: 0}
