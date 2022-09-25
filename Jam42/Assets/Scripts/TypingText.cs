@@ -14,6 +14,8 @@ public class TypingText : MonoBehaviour
 
     public float actualTypingSpeed;
     public bool isWritting;
+    public AudioSource soundManager;
+    public AudioClip[] sounds;
 
 
     // Start is called before the first frame update
@@ -32,7 +34,7 @@ public class TypingText : MonoBehaviour
         {
             text.text += letter;
             //TODO Ejecutar sonido aqui creacion de letras.
-            //writeAudio.PlayOneShot(sounds[0], 0.1f);
+            soundManager.PlayOneShot(sounds[Random.Range(0,sounds.Length)], 1f);
             yield return new WaitForSeconds(actualTypingSpeed);
 
         }

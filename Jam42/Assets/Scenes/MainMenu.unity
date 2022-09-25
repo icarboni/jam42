@@ -1084,6 +1084,8 @@ MonoBehaviour:
   typingSpeed: 0.03
   actualTypingSpeed: 0.03
   isWritting: 0
+  soundManager: {fileID: 0}
+  sounds: []
 --- !u!1 &449949020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,6 +3099,11 @@ MonoBehaviour:
   typingSpeed: 0.03
   actualTypingSpeed: 0.03
   isWritting: 0
+  soundManager: {fileID: 791201444}
+  sounds:
+  - {fileID: 8300000, guid: 68d36a525a955ef45bde945ecc249667, type: 3}
+  - {fileID: 8300000, guid: 15b45f9689e0ef641929d95405e3f034, type: 3}
+  - {fileID: 8300000, guid: 4bdd8b0cb2d759e47a566a4970cd4a42, type: 3}
 --- !u!1 &1730770048
 GameObject:
   m_ObjectHideFlags: 0
