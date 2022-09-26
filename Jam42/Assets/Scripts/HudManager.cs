@@ -79,12 +79,12 @@ public class HudManager : MonoBehaviour
     }
     public void RestartGame(string _nextScene)
     {
-        audioManager.PlayOneShot(buttonSound, 1f);
         origin = 0;
         GameManager.instance.score = 0;
         GameManager.instance.totalScore = 0;
         GameManager.instance.timeToFinish = 0;
         GameManager.instance.gameStarted = true;
+        audioManager.PlayOneShot(buttonSound, 1f);
         SceneManager.LoadScene(_nextScene);
     }
 }

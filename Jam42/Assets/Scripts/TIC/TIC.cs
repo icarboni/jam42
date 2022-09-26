@@ -7,9 +7,12 @@ public class TIC : MonoBehaviour
     public float time = 2;
     public AudioSource audiomanager;
     public AudioClip ticSound;
+    public Animator animtig;
     private void Start()
     {
         audiomanager = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+        animtig = GetComponent<Animator>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +28,7 @@ public class TIC : MonoBehaviour
 
     IEnumerator Tic(Collider2D _other)
     {
+        animtig.SetTrigger("tig");
         audiomanager.PlayOneShot(ticSound, 1f);
         _other.GetComponent<Animator>().SetTrigger("Stunned2");
         _other.GetComponent<playerMovement>().stunned = true;
