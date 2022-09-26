@@ -2785,6 +2785,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1568552094}
   - component: {fileID: 1568552095}
+  - component: {fileID: 1568552096}
+  - component: {fileID: 1568552097}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -2827,6 +2829,34 @@ MonoBehaviour:
   actualIDMenu: 0
   audioManager: {fileID: 791201444}
   buttonSound: {fileID: 8300000, guid: d03ce6b85735f4047947d241c09a0ac3, type: 3}
+--- !u!114 &1568552096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568552093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f394ae4a0463bf469dfe88ff68ead15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  volumen: {fileID: 1642851793}
+  actualSound: 0.2
+--- !u!114 &1568552097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568552093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed66240034fab44fb9f8ec898579a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 791201444}
 --- !u!1 &1642851791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,7 +2947,19 @@ MonoBehaviour:
   m_Value: 0.669
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1568552096}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: ChangeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1667435361
 GameObject:
   m_ObjectHideFlags: 0
