@@ -27,29 +27,29 @@ public class MenuManager : MonoBehaviour
 
     public void ChangeMenu(int _nextMenuID)
     {
-        audioManager.PlayOneShot(buttonSound, 1f);
        // transitionScript.GoBlack();
         listMenus[actualIDMenu].SetActive(false);
         listMenus[_nextMenuID].SetActive(true);
+        audioManager.PlayOneShot(buttonSound, 1f);
         actualIDMenu = _nextMenuID;
         //transitionScript.GoWhite();
     }
 
     public void StartGame(string _nextScene)
     {
-        audioManager.PlayOneShot(buttonSound, 1f);
         GameManager.instance.score = 0;
         GameManager.instance.coins = 0;
         GameManager.instance.totalScore = 0;
         GameManager.instance.timeToFinish = 0;
         GameManager.instance.gameStarted = true;
+        audioManager.PlayOneShot(buttonSound, 1f);
         SceneManager.LoadScene(_nextScene);
     }
 
     public void ChangeScene(string _nextScene)
     {
-        audioManager.PlayOneShot(buttonSound, 1f);
         SceneManager.LoadScene(_nextScene);
+        audioManager.PlayOneShot(buttonSound, 1f);
     }
 
     public void QuitGame()

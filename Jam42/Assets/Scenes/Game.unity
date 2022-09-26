@@ -3760,8 +3760,8 @@ MonoBehaviour:
   rankingScoreText2: {fileID: 1571994305}
   rankingNameText2: {fileID: 1249259312}
   inputField: {fileID: 1585798592}
-  audioManager: {fileID: 0}
-  buttonSound: {fileID: 0}
+  audioManager: {fileID: 1037817320}
+  buttonSound: {fileID: 8300000, guid: d03ce6b85735f4047947d241c09a0ac3, type: 3}
 --- !u!1 &1571994303
 GameObject:
   m_ObjectHideFlags: 0
