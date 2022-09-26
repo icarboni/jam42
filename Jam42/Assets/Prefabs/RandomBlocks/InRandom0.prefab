@@ -257,8 +257,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: tig_pizza
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1570913397241172761, guid: e6e0ab06a17514ec5ba6f7ca63a2ec72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e6e0ab06a17514ec5ba6f7ca63a2ec72, type: 3}
+--- !u!1 &3737761398599812627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9192563336691153496, guid: e6e0ab06a17514ec5ba6f7ca63a2ec72, type: 3}
+  m_PrefabInstance: {fileID: 5498254777214368843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7831585308781556972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737761398599812627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000e63112646bc443aa8aeeea2096523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
+  audiomanager: {fileID: 0}
+  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
+  animtig: {fileID: 0}
 --- !u!4 &5897723880898377104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2131703498058615259, guid: e6e0ab06a17514ec5ba6f7ca63a2ec72, type: 3}

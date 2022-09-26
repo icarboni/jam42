@@ -213,10 +213,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: tig_botella
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4472549057963484072, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}
 --- !u!4 &7097563859347642176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4472549057963484073, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}
   m_PrefabInstance: {fileID: 6660317052663428329}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7097563859347642179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4472549057963484074, guid: c53e552db57de4d1a9622c6db58403b2, type: 3}
+  m_PrefabInstance: {fileID: 6660317052663428329}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6172357693671988377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7097563859347642179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000e63112646bc443aa8aeeea2096523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
+  audiomanager: {fileID: 0}
+  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
+  animtig: {fileID: 0}
