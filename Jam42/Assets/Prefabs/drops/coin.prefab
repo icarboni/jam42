@@ -288,4 +288,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audiomanager: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 83ef2ed849fd3504bb5eb0f7ceb4606c, type: 3}

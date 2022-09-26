@@ -53,7 +53,7 @@ public class HudManager : MonoBehaviour
             if (GameManager.instance.score < (playerTransform.position.x - origin))
             {
                 GameManager.instance.score = playerTransform.position.x - origin;
-                scoreTXT.text = "Score: " + GameManager.instance.totalScore.ToString("F0");
+                scoreTXT.text = GameManager.instance.totalScore.ToString("F0");
             }
         }
     }
