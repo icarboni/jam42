@@ -61,7 +61,7 @@ public class HudManager : MonoBehaviour
 
     public void SuccessOrFailure(float _totalScore)
     {
-        if(_totalScore >= 2)
+        if(_totalScore >= 250)
         {
             playerTransform.GetComponent<playerMovement>().stunned = true;
             successMenu.SetActive(true);
