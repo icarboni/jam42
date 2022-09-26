@@ -17,12 +17,10 @@ public class TIC2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && collision.transform.GetChild(3).GetComponent<SpriteRenderer>().enabled == false)
+        if (collision.CompareTag("Player"))
         {
             TicEject(collision);
         }
-        else
-            collision.transform.GetChild(3).GetComponent<SpriteRenderer>().enabled = false;
 
     }
     public void TicEject(Collider2D _other) => StartCoroutine("Tic", _other);
@@ -34,7 +32,7 @@ public class TIC2 : MonoBehaviour
         _other.GetComponent<Animator>().SetTrigger("Stunned2");
         _other.GetComponent<playerMovement>().stunned = true;
         _other.GetComponent<Animator>().SetTrigger("Stunned");
-        _other.transform.GetChild(3).GetComponent<Animator>().SetTrigger("CerbSpawn");
+        _other.transform.GetChild(4).GetComponent<Animator>().SetTrigger("CerbSpawn");
         yield return new WaitForSeconds(time);
         _other.GetComponent<playerMovement>().stunned = false;
         Destroy(this.gameObject);

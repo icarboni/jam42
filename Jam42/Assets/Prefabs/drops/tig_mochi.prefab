@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4472549057963484073}
   - component: {fileID: 4472549057963484054}
   - component: {fileID: 4472549057963484055}
-  - component: {fileID: 4472549057963484072}
   - component: {fileID: -223478237980954102}
+  - component: {fileID: -2659430864709627849}
   m_Layer: 0
   m_Name: tig_mochi
   m_TagString: Untagged
@@ -114,22 +114,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49, y: 0.57}
   m_EdgeRadius: 0
---- !u!114 &4472549057963484072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4472549057963484074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17e22ef6bfe4b2e44a3bc83fbbb08b98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 2
-  audiomanager: {fileID: 0}
-  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
-  animtig: {fileID: 0}
 --- !u!95 &-223478237980954102
 Animator:
   serializedVersion: 4
@@ -150,6 +134,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2659430864709627849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472549057963484074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000e63112646bc443aa8aeeea2096523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
+  audiomanager: {fileID: 0}
+  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
+  animtig: {fileID: 0}
 --- !u!1 &7735736326309984196
 GameObject:
   m_ObjectHideFlags: 0

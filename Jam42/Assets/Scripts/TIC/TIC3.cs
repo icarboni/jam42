@@ -31,7 +31,7 @@ public class TIC3 : MonoBehaviour
         _other.GetComponent<Animator>().SetTrigger("Stunned2");
         _other.GetComponent<playerMovement>().stunned = true;
         _other.GetComponent<Animator>().SetTrigger("MedStunned");
-        _other.transform.GetChild(4).GetComponent<Animator>().SetTrigger("MedSpawn");
+        _other.transform.GetChild(5).GetComponent<Animator>().SetTrigger("MedSpawn");
         yield return new WaitForSeconds(time);
         _other.GetComponent<playerMovement>().stunned = false;
         Destroy(this.gameObject);
