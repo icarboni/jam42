@@ -17,10 +17,11 @@ public class TIC3 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && collision.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled == false)
         {
             TicEject(collision);
-        }
+        }else
+            collision.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
     }
     public void TicEject(Collider2D _other) => StartCoroutine("Tic", _other);
 
