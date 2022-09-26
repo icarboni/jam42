@@ -26,6 +26,7 @@ public class TIC : MonoBehaviour
     IEnumerator Tic(Collider2D _other)
     {
         audiomanager.PlayOneShot(ticSound, 1f);
+        _other.GetComponent<Animator>().SetTrigger("Stunned2");
         _other.GetComponent<playerMovement>().stunned = true;
         _other.GetComponent<Animator>().SetTrigger("Stunned");
         _other.transform.GetChild(1).GetComponent<Animator>().SetTrigger("CerbSpawn");
