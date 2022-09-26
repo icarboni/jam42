@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702854d9ddf078449ba7eab8e7b3e958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audiomanager: {fileID: 0}
+  duckSound: {fileID: 8300000, guid: 1e9ceebafbd3c834c8d3cdd287b3e557, type: 3}
 --- !u!61 &8142459821243928873
 BoxCollider2D:
   m_ObjectHideFlags: 0

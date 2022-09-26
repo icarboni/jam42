@@ -87,6 +87,8 @@ public class playerMovement : MonoBehaviour
         anim.SetBool("IsStunned", stunned);
     }
 
+    public void PlayWalkSound() => audioManager.PlayOneShot(sounds[1], 1f);
+
 
     
 }
