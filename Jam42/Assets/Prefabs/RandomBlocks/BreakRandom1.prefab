@@ -92,13 +92,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: tig_plate
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1570913397241172761, guid: b1a5c890a78ec414281a42982c560cb8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b1a5c890a78ec414281a42982c560cb8, type: 3}
 --- !u!4 &1607984612554712870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2131703498058615259, guid: b1a5c890a78ec414281a42982c560cb8, type: 3}
   m_PrefabInstance: {fileID: 848330901629955837}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8383287786855371941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9192563336691153496, guid: b1a5c890a78ec414281a42982c560cb8, type: 3}
+  m_PrefabInstance: {fileID: 848330901629955837}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4919064481188848863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383287786855371941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79fee8898e4dba4a8fed9075bfc096a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
+  audiomanager: {fileID: 0}
+  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
+  animtig: {fileID: 0}
 --- !u!1001 &1578208299483606231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154,13 +176,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: tig_beer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1570913397241172761, guid: b0b57dd33257c40069c26cebb3480d95, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b0b57dd33257c40069c26cebb3480d95, type: 3}
 --- !u!4 &609033920515073292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2131703498058615259, guid: b0b57dd33257c40069c26cebb3480d95, type: 3}
   m_PrefabInstance: {fileID: 1578208299483606231}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7670870073926112911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9192563336691153496, guid: b0b57dd33257c40069c26cebb3480d95, type: 3}
+  m_PrefabInstance: {fileID: 1578208299483606231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6603734885526632411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7670870073926112911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79fee8898e4dba4a8fed9075bfc096a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
+  audiomanager: {fileID: 0}
+  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
+  animtig: {fileID: 0}
 --- !u!1001 &2504467442589446904
 PrefabInstance:
   m_ObjectHideFlags: 0
