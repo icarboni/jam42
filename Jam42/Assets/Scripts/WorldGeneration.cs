@@ -40,8 +40,8 @@ public class WorldGeneration : MonoBehaviour
 
                 Instantiate(blocks[numRandom].platforms[Random.Range(0,10)], firstPosition.position + new Vector3(17.75f * (i), 0.4f, 0), Quaternion.identity, firstPosition);
                 do
-                    numRandom = Random.Range(0, 7);
-                while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6);
+                    numRandom = Random.Range(0, 8);
+                while (numRandom != 1 && numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false) && numRandom != 6 && numRandom != 7);
                 lastIsLocker = false;
             }
             else if (numRandom == 2)
@@ -115,6 +115,13 @@ public class WorldGeneration : MonoBehaviour
                 do
                     numRandom = Random.Range(0, 6);
                 while (numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false));
+                lastIsLocker = false;
+            }
+            else if (numRandom == 7)
+            {
+                do
+                    numRandom = Random.Range(0, 7);
+                while (numRandom != 2 && numRandom != 4 && !(numRandom == 5 && lastIsLocker == false) && numRandom !=6);
                 lastIsLocker = false;
             }
             if (shelterIn == false && numRandom == 2)
