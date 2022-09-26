@@ -81,6 +81,7 @@ public class HudManager : MonoBehaviour
     {
         origin = 0;
         GameManager.instance.score = 0;
+        GameManager.instance.coins = 0;
         GameManager.instance.totalScore = 0;
         GameManager.instance.timeToFinish = 0;
         GameManager.instance.gameStarted = true;
