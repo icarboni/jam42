@@ -16,6 +16,8 @@ public class HudManager : MonoBehaviour
     public GameObject failureMenu;
     public TextMeshProUGUI successText;
     public TextMeshProUGUI failureText;
+    public AudioSource audioManager;
+    public AudioClip buttonSound;
 
     void Start()
     {
@@ -48,7 +50,7 @@ public class HudManager : MonoBehaviour
             if (GameManager.instance.score < (playerTransform.position.x - origin))
             {
                 GameManager.instance.score = playerTransform.position.x - origin;
-                scoreTXT.text = "Score: " + GameManager.instance.score.ToString("F0");
+                scoreTXT.text = "Score: " + GameManager.instance.totalScore.ToString("F0");
             }
         }
     }
@@ -72,10 +74,12 @@ public class HudManager : MonoBehaviour
 
     public void ChangeScene(string _nextScene)
     {
+        audioManager.PlayOneShot(buttonSound, 1f);
         SceneManager.LoadScene(_nextScene);
     }
     public void RestartGame(string _nextScene)
     {
+        audioManager.PlayOneShot(buttonSound, 1f);
         origin = 0;
         GameManager.instance.score = 0;
         GameManager.instance.totalScore = 0;

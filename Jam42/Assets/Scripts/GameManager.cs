@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public float totalScore = 0;
     public bool gameStarted = false;
 
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
         else if (timeToFinish < 100 && gameStarted)
         {
             timeToFinish += Time.deltaTime;
+            totalScore = score + coins;
         }
     }
 }

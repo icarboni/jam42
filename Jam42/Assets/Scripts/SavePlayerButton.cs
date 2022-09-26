@@ -17,6 +17,8 @@ public class SavePlayerButton : MonoBehaviour
     public TextMeshProUGUI rankingNameText2;
     public GameObject inputField;
     List<PlayerData> rankingData;
+    public AudioSource audioManager;
+    public AudioClip buttonSound;
 
     // Start is called before the first frame update
     void Start()
@@ -77,7 +79,7 @@ public class SavePlayerButton : MonoBehaviour
 
     void SavePlayer()
     {
-
+        audioManager.PlayOneShot(buttonSound, 1f);
         string name = inputField.GetComponent<TMP_InputField>().text;
         if (!string.IsNullOrEmpty(name))
         {

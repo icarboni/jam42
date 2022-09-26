@@ -2173,12 +2173,16 @@ PrefabInstance:
       objectReference: {fileID: 1037817320}
     - target: {fileID: 8317823758801699044, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
       propertyPath: sounds.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8317823758801699044, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
       propertyPath: sounds.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 0130b980449c87e4fb71d951a35300a1, type: 3}
+    - target: {fileID: 8317823758801699044, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
+      propertyPath: sounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e49b35206cca274b8e674c4e64c7983, type: 3}
     - target: {fileID: 8317823758801699045, guid: 74290b074e3ff034a9b043935393e82e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2326,7 +2330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.92
+      value: -10.85
       objectReference: {fileID: 0}
     - target: {fileID: 5919768428707013434, guid: a3c7d7e40a20e3f48966022814f6e950, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2378,7 +2382,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 683d50375e4a53a4f84e4d55df8e4679, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3320,6 +3324,8 @@ MonoBehaviour:
   failureMenu: {fileID: 643308606}
   successText: {fileID: 54130142}
   failureText: {fileID: 1587074459}
+  audioManager: {fileID: 1037817320}
+  buttonSound: {fileID: 8300000, guid: d03ce6b85735f4047947d241c09a0ac3, type: 3}
 --- !u!1001 &1311814569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3753,6 +3759,8 @@ MonoBehaviour:
   rankingScoreText2: {fileID: 1571994305}
   rankingNameText2: {fileID: 1249259312}
   inputField: {fileID: 1585798592}
+  audioManager: {fileID: 0}
+  buttonSound: {fileID: 0}
 --- !u!1 &1571994303
 GameObject:
   m_ObjectHideFlags: 0
@@ -5316,7 +5324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4182246876614531146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.070002, y: -7.82, z: -10}
+  m_LocalPosition: {x: -29.070002, y: -7.7500005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
