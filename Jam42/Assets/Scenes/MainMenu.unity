@@ -156,8 +156,8 @@ RectTransform:
   m_Father: {fileID: 2055113901}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.669, y: 0}
-  m_AnchorMax: {x: 0.669, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 34.22, y: 0}
   m_SizeDelta: {x: 88.44, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -685,10 +685,10 @@ RectTransform:
   m_Father: {fileID: 1813949370}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6342622, y: 0.38877672}
-  m_AnchorMax: {x: 0.7174653, y: 0.45114565}
-  m_AnchoredPosition: {x: -4, y: -0.5}
-  m_SizeDelta: {x: 12.529999, y: 0.08000183}
+  m_AnchorMin: {x: 0.6342622, y: 0.6325443}
+  m_AnchorMax: {x: 0.72040653, y: 0.69500005}
+  m_AnchoredPosition: {x: 0.7651367, y: -0.5}
+  m_SizeDelta: {x: 1.5299988, y: 3.080017}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181405983
 MonoBehaviour:
@@ -1084,8 +1084,11 @@ MonoBehaviour:
   typingSpeed: 0.03
   actualTypingSpeed: 0.03
   isWritting: 0
-  soundManager: {fileID: 0}
-  sounds: []
+  soundManager: {fileID: 791201444}
+  sounds:
+  - {fileID: 8300000, guid: 15b45f9689e0ef641929d95405e3f034, type: 3}
+  - {fileID: 8300000, guid: 68d36a525a955ef45bde945ecc249667, type: 3}
+  - {fileID: 8300000, guid: 4bdd8b0cb2d759e47a566a4970cd4a42, type: 3}
 --- !u!1 &449949020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &449949021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1369,7 +1372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5287807, y: 0.38877672}
   m_AnchorMax: {x: 0.6155828, y: 0.45114565}
-  m_AnchoredPosition: {x: 3.5, y: -0.5}
+  m_AnchoredPosition: {x: 393.27002, y: -0.040008545}
   m_SizeDelta: {x: -2.4700012, y: 0.08000183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745440736
@@ -1892,7 +1895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1202734817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2162,8 +2165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6342622, y: 0.38877672}
   m_AnchorMax: {x: 0.7174653, y: 0.45114565}
-  m_AnchoredPosition: {x: -4, y: -0.5}
-  m_SizeDelta: {x: 12.529999, y: 0.08000183}
+  m_AnchoredPosition: {x: 6.265259, y: 501.7506}
+  m_SizeDelta: {x: 2.264862, y: 1.5800099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1267150299
 MonoBehaviour:
@@ -2982,8 +2985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -172, y: 69.16}
-  m_SizeDelta: {x: 1141.81, y: 355.46}
+  m_AnchoredPosition: {x: -6.01, y: 46.73}
+  m_SizeDelta: {x: 1473.8, y: 400.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714736394
 MonoBehaviour:
@@ -3096,7 +3099,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textToWrite: "Welcome to the piscine!\r\n\r\nYou have 100 seconds to get as far
     as you can, \nmeanwhile you will have to help your mates and try to avoid TIGs.\r\n\r\nYou
-    can move using with ASDW or with the arrows and jump with SPACE."
+    can move using ASDW or with the arrows and jump with SPACE.\n\nAll the rest is
+    UP TO YOU!"
   text: {fileID: 1714736394}
   typingSpeed: 0.03
   actualTypingSpeed: 0.03
@@ -3140,7 +3144,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.669, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 12.25, y: 2.6999998}
   m_SizeDelta: {x: 13.58, y: -17.97}
   m_Pivot: {x: 0.5, y: 0.5}
