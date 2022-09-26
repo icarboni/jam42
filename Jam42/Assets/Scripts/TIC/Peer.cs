@@ -24,7 +24,6 @@ public class Peer : MonoBehaviour
     IEnumerator Peers(Collider2D _other)
     {
         animPeer.SetBool("Chatting", true);
-            Debug.Log("Peer");
         _other.GetComponent<playerMovement>().stunned = true;
         yield return new WaitForSeconds(time);
         _other.GetComponent<playerMovement>().stunned = false;
