@@ -8,12 +8,14 @@ public class Coins : MonoBehaviour
     public AudioClip coinSound;
     public void Start()
     {
-        audiomanager = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+        audiomanager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            audiomanager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
+
             AddCoins();
            audiomanager.GetComponent<AudioSource>().PlayOneShot(coinSound, 1f);
         }

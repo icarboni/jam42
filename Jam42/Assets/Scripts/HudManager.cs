@@ -23,6 +23,9 @@ public class HudManager : MonoBehaviour
     {
         Singleton();
         origin = playerTransform.position.x;
+        //Debug.Log(playerTransform.position.x);
+        GameManager.instance.score = 0;
+        //origin = 0;
     }
 
     // Update is called once per frame

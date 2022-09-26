@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        score = 0;
+        timeToFinish = 0;
+        coins = 0;
+        totalScore = 0;
         DontDestroyOnLoad(this);
         Singleton();
     }
@@ -23,6 +27,14 @@ public class GameManager : MonoBehaviour
         score = 0;
         timeToFinish = 0;
         coins = 0;
+        totalScore = 0;
+    }
+    private void OnEnable()
+    {
+        score = 0;
+        timeToFinish = 0;
+        coins = 0;
+        totalScore = 0;
     }
     private void Update()
     {
