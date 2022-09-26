@@ -191,13 +191,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: tig_lock
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1570913397241172761, guid: 0043ec1d551ac4762ba45217839da7db, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0043ec1d551ac4762ba45217839da7db, type: 3}
 --- !u!4 &3403641617971714568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2131703498058615259, guid: 0043ec1d551ac4762ba45217839da7db, type: 3}
   m_PrefabInstance: {fileID: 3650588667406013395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5565310782625556875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9192563336691153496, guid: 0043ec1d551ac4762ba45217839da7db, type: 3}
+  m_PrefabInstance: {fileID: 3650588667406013395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1694189731211630603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565310782625556875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79fee8898e4dba4a8fed9075bfc096a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
+  audiomanager: {fileID: 0}
+  ticSound: {fileID: 8300000, guid: e160a0f903ae608429fd5440863c36ad, type: 3}
+  animtig: {fileID: 0}
 --- !u!1001 &8968271293809374009
 PrefabInstance:
   m_ObjectHideFlags: 0
